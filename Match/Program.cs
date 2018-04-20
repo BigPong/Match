@@ -22,7 +22,7 @@ namespace Match
 
             while (true)
             {
-                Console.WriteLine("     ~歡迎來到月老配對系統~     \r\n         不保證每人有福\r\n         只保證句句精確\r\n");
+                Console.WriteLine("     ~歡迎來到月老配對系統~     \r\n         不保證每人有福\r\n         只保證句句精確\r\n             大概啦\r\n");
                 studentsList = JsonConvert.DeserializeObject<List<student>>(data);
 
                 Console.WriteLine("請輸入學號(範例:A1060820**):");
@@ -118,6 +118,7 @@ namespace Match
                         Console.WriteLine("可憐邊緣人");
                     }
                 }
+
                 // 同上
                 else if (Sexual == "女")
                 {
@@ -185,6 +186,7 @@ namespace Match
                         Console.WriteLine("可憐邊緣人");
                     }
                 }
+
                 // 第三性向尚未開發
                 else
                 {
@@ -209,3 +211,7 @@ namespace Match
         public string zodiacSign { get; set; }
     }
 }
+
+// 血型相性：http://news.ltn.com.tw/news/life/breakingnews/1952890
+// 星座相性：https://goo.gl/CXTuN
+// 契合度：依據完美身高差?
